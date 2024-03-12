@@ -4,11 +4,25 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+
+        primary: "#b3c7e4",
+
+        secondary: "#2d5292",
+
+        accent: "#f4676a",
+
+      
+          },
+      fontFamily: {
+            Montserrat: ['Montserrat, sans-serif'],
+          }
+    },
   },
   plugins: [require("daisyui")],
 
   daisyui: {
-    themes: ["light"],
+    themes: [],
   },
 }
