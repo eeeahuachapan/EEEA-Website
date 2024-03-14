@@ -11,17 +11,17 @@ function Footer() {
 
 
         <div className='lg:flex hidden w-1/2 justify-between pr-32'>
-        <div className='flex flex-col items-start justify-center text-xs '>
+        <div className='flex flex-col items-start justify-center text-xs lg:gap-1 lg:text-sm '>
             <p className='font-semibold text-left'>Acerca de</p>
             <p className='text-left'>Nosotros</p>
             <p>Instalaciones</p>
         </div>
-        <div className='flex flex-col items-start  justify-center text-xs'>
+        <div className='flex flex-col items-start  justify-center text-xs lg:gap-1 lg:text-sm'>
         <p className='font-semibold'>Vida estudiantil</p>
             <p>Calendario</p>
             <p>Eventos</p>
         </div>
-        <div className='flex flex-col items-start justify-center text-xs h-1/2 lg:h-full '>
+        <div className='flex flex-col items-start justify-center text-xs h-1/2 lg:h-full lg:gap-1 lg:text-sm '>
             <p className='font-semibold'>Contactenos</p>
             <p>(+503) 7777 7777</p>
             <p>direccion@correo.com</p>

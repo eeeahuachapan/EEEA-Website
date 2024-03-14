@@ -21,17 +21,17 @@ function Navbar() {
         <div className='navbar-end w-full flex gap-3 pr-8 '>
        <ul className="menu menu-horizontal  px-1 text-sm gap-5 lg:flex hidden">
         
-       <li><a className=''>Inicio</a></li>
+       <li><a className=' hover:bg-slate-100'>Inicio</a></li>
         <li className='' tabIndex={0}>
           <details>
-            <summary className='font-Montserrat'>Acerca de</summary>
-            <ul className="p-2 w-40">
+            <summary className='font-Montserrat  hover:bg-slate-100'>Acerca de</summary>
+            <ul className="p-2 w-40 bg-white">
             <li>
-                <div>
+                <div className=' hover:bg-slate-100'>
                   Nosotros
                 </div>
               </li>
-              <li>
+              <li className=' hover:bg-slate-100'>
                 <div>
                   Instalaciones
                 </div>
@@ -41,17 +41,17 @@ function Navbar() {
           </details>
         </li>
         
-        <li><a className=''>Oferta academica</a></li>
+        <li><a className=' hover:bg-slate-100  '>Oferta academica</a></li>
         <li tabIndex={0}>
           <details>
-            <summary className=''>Vida estudiantil</summary>
-            <ul className="p-2 ">
-              <li><a>Calendario</a></li>
-              <li><a>Eventos</a></li>
+            <summary className=' hover:bg-slate-100'>Vida estudiantil</summary>
+            <ul className="p-2 bg-white w-40 ">
+              <li ><a  className='hover:bg-slate-100 '>Calendario</a></li>
+              <li><a className=' hover:bg-slate-100'>Eventos</a></li>
             </ul>
           </details>
         </li>
-        <li><a className=''>Contactenos</a></li>
+        <li><a className=' hover:bg-slate-100'>Contactenos</a></li>
       </ul>
        </div>
       </div>
@@ -61,7 +61,7 @@ function Navbar() {
       <ul className="menu p-4 py-16 w-64 font-semibold text-base  min-h-full bg-white gap-2">
         {/* Sidebar content here */}
             
-        <li><a>Inicio</a></li>
+        <li><a className=''>Inicio</a></li>
         <li tabIndex={0}>
           <details>
             <summary>Acerca de</summary>
