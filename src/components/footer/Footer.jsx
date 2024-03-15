@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='bg-secondary h-2/5 w-full font-Montserrat text-white flex flex-col lg:flex-row lg:px-24 gap-5 py-8 mt-5'>
+    <div className='bg-secondary h-2/5 w-full font-Montserrat text-white flex flex-col lg:flex-row lg:px-24 gap-5 py-8 mt-5 bottom-0'>
         <div className='h-1/2 w-full lg:w-1/2 lg:h-full flex justify-center items-center lg:px-5 lg:gap-0'>
             <img src="/src/assets/logo.png" className='w-16 h-16 lg:w-24 lg:h-24' alt="" />
             <h1 className=' font-semibold text-center text-sm lg:text-base w-3/5 lg:w-2/5 lg:px-10'>Escuela de Educación Especial de Ahuachapan</h1>
