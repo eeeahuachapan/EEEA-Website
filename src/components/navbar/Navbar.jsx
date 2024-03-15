@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div className="drawer drawer-end font-Montserrat">
+    <div className="drawer drawer-end font-Montserrat ">
     <input id="my-drawer-3" type="checkbox" className="drawer-toggle" /> 
     <div className="drawer-content flex flex-col">
       {/* Navbar */}
@@ -12,7 +12,7 @@ function Navbar() {
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
           </label>
         </div> 
-        <div className="navbar-start  lg:w-1/12 lg:px-0 lg:mx-5 mt-2 flex lg:items-center lg:justify-center">
+        <div className="navbar-start  lg:w-1/12 lg:px-0 lg:mx-5 flex lg:items-center lg:justify-center">
               <img className="w-18 h-12" src='/src/assets/logo.png' />
           </div>
         <div className="flex-none hidden lg:block">
