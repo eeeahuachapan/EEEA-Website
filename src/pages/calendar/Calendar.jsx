@@ -1,5 +1,6 @@
 import Navbar from "../../components/navbar/Navbar"
 import Footer from "../../components/footer/Footer"
+import CalendarItem from "../../components/calendarItem/CalendarItem"
 
 function Calendar() {
     return (
@@ -8,8 +9,8 @@ function Calendar() {
 
             <h1 className='font-bold text-secondary text-xl lg:text-3xl lg:font-extrabold lg:my-6'>Calendario Académico</h1>
 
-            <section className="h-screen w-full p-6 gap-10 flex flex-col lg:flex-row items-center lg:justify-between">
-                <div className="flex flex-wrap lg:w-32 justify-center join join-horizontal lg:join-vertical m-4 gap-1">
+            <section className="w-full lg:h-4/5 flex flex-col lg:flex-row">
+                <div className="flex flex-wrap lg:w-40 justify-center join join-horizontal lg:join-vertical mx-4 p-6 gap-1">
                     <button className="btn btn-sm border-white">Enero</button>
                     <button className="btn btn-sm border-white">Febrero</button>
                     <button className="btn btn-sm border-white">Marzo</button>
@@ -24,17 +25,16 @@ function Calendar() {
                     <button className="btn btn-sm border-white">Diciembre</button>
                 </div>
 
-                <div className="flex flex-col w-11/12 h-full gap-6">
-                    <div className="bg-slate-300">Aqui hay un evento</div>
-                    <div className="bg-slate-300">Aqui hay un evento</div>
-                    <div className="bg-slate-300">Aqui hay un evento</div>
-                    <div className="bg-slate-300">Aqui hay un evento</div>
-                    <div className="bg-slate-300">Aqui hay un evento</div>
-                    <div className="bg-slate-300">Aqui hay un evento</div>
-                    <div className="bg-slate-300">Aqui hay un evento</div>
-                    <div className="bg-slate-300">Aqui hay un evento</div>
-                    <div className="bg-slate-300">Aqui hay un evento</div>
-                    <div className="bg-slate-300">Aqui hay un evento</div>
+                <div className="flex flex-col  lg:w-11/12 gap-6 p-6 lg:overflow-y-auto">
+                    <CalendarItem />
+                    <CalendarItem />
+                    <CalendarItem />
+                    <CalendarItem />
+                    <CalendarItem />
+                    <CalendarItem />
+                    <CalendarItem />
+                    <CalendarItem />
+                    <CalendarItem />
                 </div>
             </section>
 
