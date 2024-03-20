@@ -12,11 +12,19 @@ function ContactUs() {
 
             <div className="flex flex-col items-center w-full h-fit gap-6 p-4 lg:px-14">
                 <div className="grid lg:grid-cols-3 w-full h-fit gap-6 lg:gap-8">
-                    <section className="order-last lg:order-first bg-slate-400">01</section>
+                    <section className="order-last lg:order-first bg-slate-400">
+                        <div className="google-map-code w-full h-96 lg:h-full">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.47864167!2d-89.84985492516677!3d13.930082186480629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6297f6ec87d7cf%3A0x683dd6c8693d080b!2sEscuela%20de%20Educaci%C3%B3n%20Especial%20de%20Ahuachap%C3%A1n!5e0!3m2!1ses-419!2ssv!4v1710895757930!5m2!1ses-419!2ssv"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                allowfullscreen=""></iframe>
+                        </div>
+                    </section>
 
                     <dl className="h-auto flex flex-col items-center justify-between bg-secondary text-center text-white p-8 gap-2 rounded-lg shadow-xl">
                         <dt className="text-xl lg:text-2xl font-semibold pb-3">Información de Contacto</dt>
-                        
+
                         <div className="flex justify-center w-full p-1">
                             <img src="src\assets\email-svgrepo-com 1.png" alt="" className='w-16 h-16' />
                         </div>
@@ -32,7 +40,7 @@ function ContactUs() {
                         <dt className="text-xl lg:text-2xl font-semibold pb-3">Horarios de Atención</dt>
                         <dd className="text-base lg:text-lg">Lunes a Viernes</dd>
                         <dd className="text-base lg:text-lg pb-4">8:00 AM - 3:00 PM</dd>
-                        
+
                         <div className='flex justify-center w-full p-1'>
                             <img src="src\assets\location-pin-svgrepo-com 1.png" alt="" className='w-16 h-16' />
                         </div>
