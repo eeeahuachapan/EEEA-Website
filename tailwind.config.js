@@ -5,6 +5,9 @@ export default {
   ],
   theme: {
     extend: {
+      width: {
+        '3/10': '32%',
+      },
       colors: {
 
         primary: "#b3c7e4",

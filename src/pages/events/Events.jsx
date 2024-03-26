@@ -127,7 +127,7 @@ function Events() {
             <button className="btn btn-sm border-white">Diciembre</button>
         </div>
 
-        <div className="flex flex-col  lg:w-11/12 gap-6 lg:p-6 py-6 px-2  lg:overflow-y-auto">
+        <div className="flex flex-col  lg:w-11/12 gap-6 lg:px-0 py-6 px-2  lg:overflow-y-auto lg:flex-row lg:flex-wrap">
          <EventItem />
          <EventItem />
          <EventItem />
