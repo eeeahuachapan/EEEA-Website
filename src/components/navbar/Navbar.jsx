@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -21,20 +22,20 @@ function Navbar() {
         <div className='navbar-end w-full flex gap-3 pr-8 '>
        <ul className="menu menu-horizontal  px-1 text-sm gap-5 lg:flex hidden">
         
-       <li><a className=' hover:bg-slate-100'>Inicio</a></li>
+       <li><Link to='/' className=' hover:bg-slate-100'>Inicio</Link></li>
         <li className='' tabIndex={0}>
           <details>
             <summary className='font-Montserrat  hover:bg-slate-100'>Acerca de</summary>
             <ul className="p-2 w-40 bg-white">
             <li>
-                <div className=' hover:bg-slate-100'>
+                <Link to='/aboutus' className=' hover:bg-slate-100'>
                   Nosotros
-                </div>
+                </Link>
               </li>
               <li className=' hover:bg-slate-100'>
-                <div>
+                <Link to='/facilities'>
                   Instalaciones
-                </div>
+                </Link>
               </li>
               
             </ul>
@@ -46,12 +47,12 @@ function Navbar() {
           <details>
             <summary className=' hover:bg-slate-100'>Vida estudiantil</summary>
             <ul className="p-2 bg-white w-40 ">
-              <li ><a  className='hover:bg-slate-100 '>Calendario</a></li>
-              <li><a className=' hover:bg-slate-100'>Eventos</a></li>
+              <li ><Link to='/calendar'  className='hover:bg-slate-100 '>Calendario</Link></li>
+              <li><Link to='/events' className=' hover:bg-slate-100'>Eventos</Link></li>
             </ul>
           </details>
         </li>
-        <li><a className=' hover:bg-slate-100'>Contactenos</a></li>
+        <li><Link to='/contactus' className=' hover:bg-slate-100'>Contactenos</Link></li>
       </ul>
        </div>
       </div>
@@ -67,29 +68,29 @@ function Navbar() {
             <summary>Acerca de</summary>
             <ul className="p-2">
               <li>
-                <div>
+                <Link to='/aboutus' >
                   Nosotros
-                </div>
+                </Link>
               </li>
               <li>
-                <div>
+                <Link to='/facilities'>
                   Instalaciones
-                </div>
+                </Link>
               </li>
             </ul>
           </details>
         </li>
+        <li><a>Oferta academica</a></li>
         <li tabIndex={0}>
           <details>
             <summary>Vida estudiantil</summary>
             <ul className="p-2">
-              <li><a>Oferta academica</a></li>
-              <li><a>Contactenos</a></li>
+              <li><Link to='/calendar'>Calendario</Link></li>
+              <li><Link to='/events'>Eventos</Link></li>
             </ul>
           </details>
         </li>
-        <li><a>Careers</a></li>
-        <li><a>About</a></li>
+        <li><Link to='/concatus'>Contactenos</Link></li>
        
        
       </ul>
