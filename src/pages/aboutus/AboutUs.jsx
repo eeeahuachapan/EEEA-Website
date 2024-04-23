@@ -38,7 +38,7 @@ function AboutUs() {
     <p className='px-5 text-sm lg:text-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam maiores officia, soluta quae doloremque repudiandae reprehenderit quisquam reiciendis! Officiis voluptatem itaque incidunt maxime delectus cupiditate ullam eaque deleniti corporis voluptatibus?
     <br/> <br/> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nobis in quas necessitatibus, qui natus, inventore magni debitis eius doloribus repellat nihil laboriosam architecto dolor quia dignissimos ratione itaque quidem. </p>
     
-    <img src="/src/assets/Imagen2.webp" alt="" className='w-11/12 h-1/3 object-cover rounded-lg lg:h-full'/>
+    <img src="/src/assets/Imagen2.webp" alt="" className='w-11/12 h-1/3 object-cover rounded-lg lg:h-full lg:w-1/3'/>
     </section>
     
 
