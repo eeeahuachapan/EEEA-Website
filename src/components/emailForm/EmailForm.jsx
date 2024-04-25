@@ -1,7 +1,7 @@
 function EmailForm() {
     return (
-        <form className='w-full lg:w-1/2 h-full flex flex-col items-center justify-between gap-3 lg:gap-5 p-8'>
-                        <div className="text-secondary text-xl lg:text-2xl font-semibold pb-3">Escríbanos un mensaje</div>
+        <form className='w-full lg:w-1/2 h-full flex flex-col items-center justify-between gap-3 lg:gap-5 p-8 font-Montserrat'>
+                        <div className="text-secondary text-xl lg:text-2xl font-semibold pb-3">Envíenos un mensaje</div>
 
                         <div className="grid md:grid-cols-2 md:gap-6 w-full">
                             <div className="relative z-0 w-full mb-5 group">
