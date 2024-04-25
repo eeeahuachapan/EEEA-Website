@@ -1,7 +1,7 @@
 import Facilities from "./pages/facilities/Facilities"
 import Home from "./pages/home/Home"
 import Calendar from "./pages/calendar/Calendar"
-import AboutUs from "./pages/aboutus/AboutUs"
+import AboutUs from "./pages/aboutUs/AboutUs"
 import Events from "./pages/events/Events"
 import ContactUs from "./pages/contactUs/ContactUs"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
