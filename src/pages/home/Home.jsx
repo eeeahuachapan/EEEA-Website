@@ -1,7 +1,14 @@
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
+import { Navigate, useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+  const navigateToAboutUs = () => {
+    navigate(`/aboutus`);
+    window.scrollTo({ top: 0, behavior: 'smooth' }); 
+  };
+
   return (
     <div className=' h-screen min-h-screen flex flex-col items-center font-Montserrat'>
       <Navbar />
@@ -9,26 +16,24 @@ function Home() {
       <div className='h-1/5 w-full  -z-10 flex flex-col justify-center lg:items-center lg:h-1/3'>
 
         <h1 className='text-white font-extrabold absolute z-10 text-1xl text-center lg:text-5xl lg:px-32'>ESCUELA DE EDUCACIÓN ESPECIAL DE AHUACHAPÁN</h1>
-        <img src='/src/assets/banner.jpg' alt='logo' className='object-cover h-full w-full relative brightness-50' />
+        <img src='/src/assets/banner.webp' alt='logo' className='object-cover h-full w-full relative brightness-50' />
       </div>
 
       <div className='w-11/12 h-4/5 bg-primary rounded-md flex flex-col items-center p-5 my-5 lg:mt-12 gap-3 lg:w-10/12 lg:h-auto
     shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
         <h1 className='text-secondary font-semibold text-xl lg:text-3xl lg:font-extrabold'>Sobre nosotros</h1>
         <section className='w-full flex items-center justify-center gap-12'>
-          <div className='w-full lg:w-1/2 flex flex-col items-center gap-3 lg:gap-5 p-4'>
+          <div className='w-full lg:w-1/2 flex flex-col items-center gap-3 lg:gap-5 p-4 '>
             <p className='text-sm lg:text-xl text-justify'>El 27 de mayo de 1991 nace la Escuela de Educación Especial de Ahuachapán, fundada por la Lic. Julissa Evelyn Rugamas, con el deseo de brindar atención a los niños con discapacidad intelectual de la ciudad de Ahuachapán; tomando en cuenta que no había ningún centro educativo que brinda atención especializada.
               <br />
               <br />El propósito de la escuela es preparar a los niños y niñas para la vida, desarrollando en ellos sus capacidades y fortalezas para que puedan desenvolverse de una manera funcional en el medio familiar, social y laboral.</p>
 
-            <button className='bg-accent hover:bg-accent_hover active:bg-accent_active text-white rounded-md py-2 my-2 w-3/5 font-semibold lg:text-xl lg:font-bold 
+            <button onClick={navigateToAboutUs} className='bg-accent hover:bg-accent_hover active:bg-accent_active text-white rounded-md py-2 my-2 w-3/5 font-semibold lg:text-xl lg:font-bold 
     shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] active:shadow-[inset_-12px_-8px_40px_#46464620]'>Conocer más</button>
 
-
-            <img src="/src/assets/Imagen1.jpg" alt="" className='lg:hidden  object-cover w-2/3 h-1/2 rounded-md' />
           </div>
 
-          <img src="/src/assets/Imagen1.jpg" alt="" className='hidden lg:flex  w-2/5 h-4/5 object-cover rounded-md' />
+          <img src="/src/assets/Picture1.webp" alt="" className='hidden lg:flex  w-2/5 h-4/5 object-cover rounded-md' />
         </section>
 
 
