@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 function Navbar() {
@@ -42,7 +41,7 @@ function Navbar() {
           </details>
         </li>
         
-        <li><a className=' hover:bg-slate-100  '>Oferta academica</a></li>
+        <li><a className=' hover:bg-slate-100  '>Oferta académica</a></li>
         <li tabIndex={0}>
           <details>
             <summary className=' hover:bg-slate-100'>Vida estudiantil</summary>
@@ -52,7 +51,7 @@ function Navbar() {
             </ul>
           </details>
         </li>
-        <li><Link to='/contactus' className=' hover:bg-slate-100'>Contactenos</Link></li>
+        <li><Link to='/contactus' className=' hover:bg-slate-100'>Contáctenos</Link></li>
       </ul>
        </div>
       </div>
@@ -62,7 +61,11 @@ function Navbar() {
       <ul className="menu p-4 py-16 w-64 font-semibold text-base  min-h-full bg-white gap-2">
         {/* Sidebar content here */}
             
-        <li><a className=''>Inicio</a></li>
+        <li>
+          <Link to='/' >
+            Inicio
+          </Link>
+        </li>
         <li tabIndex={0}>
           <details>
             <summary>Acerca de</summary>
@@ -80,7 +83,7 @@ function Navbar() {
             </ul>
           </details>
         </li>
-        <li><a>Oferta academica</a></li>
+        <li><a>Oferta académica</a></li>
         <li tabIndex={0}>
           <details>
             <summary>Vida estudiantil</summary>
@@ -90,7 +93,7 @@ function Navbar() {
             </ul>
           </details>
         </li>
-        <li><Link to='/concatus'>Contactenos</Link></li>
+        <li><Link to='/contactus'>Contáctenos</Link></li>
        
        
       </ul>

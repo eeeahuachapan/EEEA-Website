@@ -5,7 +5,7 @@ import EmailForm from "../../components/emailForm/EmailForm"
 
 function ContactUs() {
     return (
-        <div className="h-screen min-h-screen flex flex-col items-center">
+        <div className="h-screen min-h-screen flex flex-col items-center font-Montserrat">
             <Navbar />
 
             <h1 className='font-bold text-secondary text-xl lg:text-3xl lg:font-extrabold lg:my-6'>Contáctenos</h1>
@@ -28,30 +28,31 @@ function ContactUs() {
                         <div className="flex justify-center w-full p-1">
                             <img src="src\assets\email-svgrepo-com 1.png" alt="" className='w-16 h-16' />
                         </div>
-                        <dd className="text-base lg:text-lg pb-4">Correo electrónico: correo@gmail.com</dd>
+                        <dd className="text-base lg:text-lg pb-4">Correo electrónico: roxana.carmen.chiguila@clases.edu.sv</dd>
 
                         <div className="flex justify-center w-full p-1">
                             <img src="src\assets\phone-call-svgrepo-com 1.png" alt="" className='w-16 h-16' />
                         </div>
-                        <dd className="text-base lg:text-lg">Teléfono: (503) 7777-8888</dd>
+                        <dd className="text-base lg:text-lg">Teléfono: (503) 7887-4853</dd>
                     </dl>
 
                     <dl className="h-auto flex flex-col order-first lg:order-last items-center justify-between bg-primary text-center text-secondary p-8 gap-2 rounded-lg shadow-xl">
                         <dt className="text-xl lg:text-2xl font-semibold pb-3">Horarios de Atención</dt>
                         <dd className="text-base lg:text-lg">Lunes a Viernes</dd>
-                        <dd className="text-base lg:text-lg pb-4">8:00 AM - 3:00 PM</dd>
+                        <dd className="text-base lg:text-lg">Matutino: 7:00 AM - 11:30 AM</dd>
+                        <dd className="text-base lg:text-lg pb-2">Vespertino: 1:00 PM - 5:30 PM</dd>
 
                         <div className='flex justify-center w-full p-1'>
                             <img src="src\assets\location-pin-svgrepo-com 1.png" alt="" className='w-16 h-16' />
                         </div>
-                        <dd className="text-base lg:text-lg">Dirección: Avenida Hola Hola, Calle Hola, Ahuachapán</dd>
+                        <dd className="text-base lg:text-lg">Dirección: Col. Zacamil, esquina opuesta a Hospital General de Ahuachapán Francisco Menéndez.</dd>
                     </dl>
                 </div>
 
                 <section className="flex w-full h-auto items-center justify-between bg-primary rounded-lg">
                     <EmailForm />
 
-                    <img src="/src/assets/Imagen1.jpg" alt="" className='hidden lg:flex w-1/2 h-full object-cover rounded-r-lg' />
+                    <img src="/src/assets/Picture2.webp" alt="" className='hidden lg:flex w-1/2 h-full object-cover rounded-r-lg' />
                 </section>
             </div>
 

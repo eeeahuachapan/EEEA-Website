@@ -4,7 +4,7 @@ import CalendarItem from "../../components/calendarItem/CalendarItem"
 
 function Calendar() {
     return (
-        <div className="h-screen min-h-screen flex flex-col items-center justify-between">
+        <div className="h-screen min-h-screen flex flex-col items-center justify-between font-Montserrat">
             <Navbar />
 
             <h1 className='font-bold text-secondary text-xl lg:text-3xl lg:font-extrabold lg:my-6'>Calendario Académico</h1>
