@@ -22,6 +22,7 @@ export default {
           },
           backgroundImage: {
             'hero': "url('/src/assets/banner.jpg')",
+            'shapes':'url(/src/assets/Pattern.svg)',
           },
       fontFamily: {
             Montserrat: ['Montserrat, sans-serif'],

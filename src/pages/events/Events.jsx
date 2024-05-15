@@ -9,7 +9,7 @@ function Events() {
 
     <h1 className='font-bold text-secondary text-xl lg:text-3xl lg:font-extrabold lg:my-3'>Eventos</h1>
 
-    <section className="w-full  lg:h-5/6 flex flex-col lg:flex-row items-end lg:items-stretch min-h-4/6   ">
+    <section className="w-full  lg:h-5/6 flex flex-col lg:flex-row items-end lg:items-stretch min-h-4/6 lg:bg-shapes lg:z-0 ">
         
         <button className="btn btn-sm bg-accent text-white border-none w-2/6 lg:hidden flex justify-between px-4 mr-5" onClick={()=>document.getElementById('filters').showModal()}>
                 Filtros
@@ -126,7 +126,7 @@ function Events() {
             <button className="btn btn-sm border-white">Diciembre</button>
         </div>
 
-        <div className="flex flex-col  lg:w-11/12 gap-6 lg:px-0 py-6 px-2  lg:overflow-y-auto lg:flex-row lg:flex-wrap">
+        <div className="flex flex-col w-full lg:w-11/12 gap-6 lg:px-0 py-6 px-2  lg:overflow-y-auto lg:flex-row lg:flex-wrap">
          <EventItem />
          <EventItem />
          <EventItem />

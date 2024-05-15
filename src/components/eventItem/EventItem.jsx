@@ -1,8 +1,8 @@
 function EventItem() {
   return (
-    <div className="font-Montserrat card card-side bg-base-100 h-32 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-xl flex lg:w-3/10 lg:h-1/3">
+    <div className="font-Montserrat card card-side bg-base-100 h-32 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-xl flex -z-10 lg:w-3/10 lg:h-1/3">
     <img src="/src/assets/Imagen2.webp" alt="" className='w-1/3 lg:w-5/12 object-cover rounded-l-xl' />
-    <div className="card-body p-5 rounded-r-xl text-xs lg:text-sm bg-white lg:items-center">
+    <div className="card-body p-5 rounded-r-xl text-xs lg:text-sm bg-white lg:items-center ">
         <h1 className='text-secondary text-lg font-bold'>Nombre</h1>
         <div className='flex text-xs lg:flex-col lg:text-sm lg:gap-2'>
             <label className='text-center flex flex-col gap-1 items-center lg:flex-row  lg:text-left'> 

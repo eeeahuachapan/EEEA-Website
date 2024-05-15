@@ -41,7 +41,7 @@ function Navbar() {
           </details>
         </li>
         
-        <li><a className=' hover:bg-slate-100  '>Oferta académica</a></li>
+        <li><Link to='/AcademicOffer' className=' hover:bg-slate-100  '>Oferta académica</Link></li>
         <li tabIndex={0}>
           <details>
             <summary className=' hover:bg-slate-100'>Vida estudiantil</summary>
@@ -58,7 +58,7 @@ function Navbar() {
     </div> 
     <div className="drawer-side ">
       <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label> 
-      <ul className="menu p-4 py-16 w-64 font-semibold text-base  min-h-full bg-white gap-2">
+      <ul className="menu p-4 py-16 w-64 font-semibold text-base  min-h-full bg-white gap-2  z-50">
         {/* Sidebar content here */}
             
         <li>
@@ -83,7 +83,7 @@ function Navbar() {
             </ul>
           </details>
         </li>
-        <li><a>Oferta académica</a></li>
+        <li><Link to='/AcademicOffer'>Oferta académica</Link></li>
         <li tabIndex={0}>
           <details>
             <summary>Vida estudiantil</summary>
