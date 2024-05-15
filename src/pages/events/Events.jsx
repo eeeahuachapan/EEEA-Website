@@ -2,6 +2,7 @@ import Navbar from "../../components/navbar/Navbar"
 import Footer from "../../components/footer/Footer"
 import EventItem from "../../components/eventItem/EventItem"
 
+
 function Events() {
   return (
     <div className="h-screen min-h-screen flex flex-col items-center font-Montserrat">
