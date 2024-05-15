@@ -1,9 +1,32 @@
 import Navbar from "../../components/navbar/Navbar"
 import Footer from "../../components/footer/Footer"
 import EventItem from "../../components/eventItem/EventItem"
-
+import React, { useEffect, useState } from "react";
+import {getEvents} from "../../services/eventService";
 
 function Events() {
+
+    const [loading, setLoading] = useState(false);
+    const [events, setEvents] = useState([])
+
+    const getData = async () => {
+        
+        try {
+        setLoading(true);
+        let response = await getEvents();
+        if (response) {
+            setEvents(response.data.events);
+            console.log(response.data.events);
+        } 
+        setLoading(false);
+        } catch (error) {
+        console.error('Error al obtener datos de la API:', error);
+        }
+    };
+
+        useEffect(() => {
+            getData();
+        }, []);
   return (
     <div className="h-screen min-h-screen flex flex-col items-center font-Montserrat">
     <Navbar />
@@ -128,11 +151,9 @@ function Events() {
         </div>
 
         <div className="flex flex-col w-full lg:w-11/12 gap-6 lg:px-0 py-6 px-2  lg:overflow-y-auto lg:flex-row lg:flex-wrap">
-         <EventItem />
-         <EventItem />
-         <EventItem />
-         <EventItem />
-         <EventItem />
+        {events.map((event) => (
+                 <EventItem key={event.id} title={event.title} datetime={event.datetime} thumbnail={event.thumbnail} location={event.location}/>
+              ))}
         </div>
     </section>
 
