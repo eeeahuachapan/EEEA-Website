@@ -25,7 +25,7 @@ function Calendar() {
                     <button className="btn btn-sm border-white">Diciembre</button>
                 </div>
 
-                <div className="flex flex-col lg:w-11/12 gap-6 p-6 lg:overflow-y-auto">
+                <div className="flex flex-col lg:w-11/12 gap-6 p-6 lg:overflow-y-auto lg:bg-shapes lg:z-0 ">
                     <CalendarItem />
                     <CalendarItem />
                     <CalendarItem />

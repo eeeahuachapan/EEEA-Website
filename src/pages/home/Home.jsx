@@ -12,13 +12,14 @@ function Home() {
   return (
     <div className=' h-screen min-h-screen flex flex-col items-center font-Montserrat'>
       <Navbar />
-
-      <div className='h-1/5 w-full  -z-10 flex flex-col justify-center lg:items-center lg:h-1/3'>
+      
+      <div className='h-1/5 w-full  -z-10 flex flex-col justify-center  lg:items-center lg:h-1/3'>
 
         <h1 className='text-white font-extrabold absolute z-10 text-1xl text-center lg:text-5xl lg:px-32'>ESCUELA DE EDUCACIÓN ESPECIAL DE AHUACHAPÁN</h1>
         <img src='/src/assets/banner.webp' alt='logo' className='object-cover h-full w-full relative brightness-50' />
       </div>
 
+      <div className='w-full h-auto flex flex-col items-center bg-shapes'> 
       <div className='w-11/12 h-4/5 bg-primary rounded-md flex flex-col items-center p-5 my-5 lg:mt-12 gap-3 lg:w-10/12 lg:h-auto
     shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
         <h1 className='text-secondary font-semibold text-xl lg:text-3xl lg:font-extrabold'>Sobre nosotros</h1>
@@ -42,7 +43,7 @@ function Home() {
 
       <h1 className='font-bold text-secondary text-xl lg:text-3xl lg:font-extrabold lg:mt-12'>Secciones de interés </h1>
 
-      <section className='lg:flex lg:my-5 lg:mb-12'>
+      <section className='lg:flex lg:my-5 lg:mb-12 '>
         <div className='w-full flex flex-col items-center'>
           <img src='/src/assets/OfertaAcademica.svg' alt='section1' className='w-1/3 py-5  lg:py-4 ' />
           <h2 className='bg-primary rounded-md py-1 px-2 w-1/2 text-center font-semibold text-secondary'>Oferta académica</h2>
@@ -58,6 +59,8 @@ function Home() {
           <h2 className='bg-primary rounded-md py-1 px-2 w-1/2 text-center font-semibold text-secondary'>Instalaciones</h2>
         </div>
       </section>
+      </div>
+     
 
 
 

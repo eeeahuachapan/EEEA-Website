@@ -3,7 +3,7 @@ import Footer from '../../components/footer/Footer'
 
 function AboutUs() {
   return (
-    <div className=' h-screen min-h-screen flex flex-col items-center font-Montserrat'>
+    <div className=' h-screen min-h-screen flex flex-col items-center font-Montserrat '>
       <Navbar />
 
       <div className='h-1/5 w-full  -z-10 flex flex-col justify-center items-center lg:h-1/3'>
@@ -11,6 +11,8 @@ function AboutUs() {
         <img src='/src/assets/banner.webp' alt='logo' className='object-cover h-full w-full relative brightness-50' />
       </div>
 
+
+      
       <p className='px-5 text-sm lg:w-10/12 lg:text-base mt-5 lg:mt-12 text-justify'>El referente de evaluación que se tiene en este centro educativo es la aplicación de las pruebas psicológicas que son parte del protocolo de atención a los estudiantes, aplicadas por psicólogos y evaluaciones pedagógicas realizadas por los docentes, estas muestran resultados que indican el nivel de discapacidad intelectual, con los cuales es necesaria la implementación de estrategias metodológicas con adecuaciones curriculares según la limitante de cada estudiante. A partir de los resultados obtenidos, las docentes elaboran un expediente por estudiante, y con esta base se elabora y planifica la atención educativa y curricular para cada estudiante en particular.
         <br /> <br /> Actualmente se cuenta con un equipo de 6 docentes en educación especial al servicio de los 66 estudiantes pertenecientes a la institución. Existe un genuino compromiso con el trabajo de parte de todos los miembros del equipo. Dentro de las estrategias metodológicas que el equipo de docentes utiliza se encuentran ludotecas, material concreto, dinámicas grupales, exposiciones, experimentos, entre otros. </p>
 

@@ -4,6 +4,7 @@ import Calendar from "./pages/calendar/Calendar"
 import AboutUs from "./pages/aboutus/AboutUs"
 import Events from "./pages/events/Events"
 import ContactUs from "./pages/contactUs/ContactUs"
+import AcademicOffer from "./pages/academicOffer/AcademicOffer"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <Routes>
         <Route path="/" Component={Home} />
         <Route path="/AboutUs" Component={AboutUs} />
+        <Route path="/AcademicOffer" Component={AcademicOffer} />
         <Route path="/Facilities" Component={Facilities} />
         <Route path="/Calendar" Component={Calendar} />
         <Route path="/Events" Component={Events} />
