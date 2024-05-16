@@ -10,7 +10,6 @@ function EmailForm() {
         phoneNumber: ''
     });
     
-    const [success, setSuccess] = useState(false);
 
     const initialState = {
         name: '',
@@ -36,12 +35,8 @@ function EmailForm() {
             console.log(formData);
            await sendEmail(name, lastname, email, message, phoneNumber);
            setFormData(initialState);
-           setSuccess(true);
-           window.alert('¡El correo se ha enviado exitosamente!');
+           document.getElementById('my_modal_1').showModal();
             console.log('Correo enviado exitosamente');
-            setTimeout(() => {
-                setSuccess(false);
-            }, 5000); 
         } catch (error) {
             console.error("Error al enviar el correo:", error);
         }
@@ -81,7 +76,15 @@ function EmailForm() {
                         <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows="4" className="block p-2.5 w-full text-sm text-secondary bg-gray-50 rounded-lg placeholder-secondary border border-secondary" placeholder="Escriba su mensaje..."></textarea>
 
                         <button type="submit" className='bg-accent hover:bg-accent_hover active:bg-accent_active text-white rounded-md py-2 w-3/5 font-semibold lg:text-xl lg:font-bold shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] active:shadow-[inset_-12px_-8px_40px_#46464620]'>Enviar</button>
-                   
+                        <dialog id="my_modal_1" className="modal modal-bottom sm:modal-middle">
+                        <div className="modal-box bg-white">
+                            <h3 className="font-bold text-lg">Mensaje enviado con exito</h3>
+                            <p className="py-4">Presiona la tecla ESC o presiona el boton para regresar</p>
+                            <div className="modal-action">
+                                <button onClick={()=>document.getElementById('my_modal_1').close()} className="bg-accent flex justify-center hover:bg-accent_hover active:bg-accent_active px-16 py-3 lg:py-1 lg:px-5  text-white rounded-md  w-1/5 font-semibold lg:text-lg lg:font-bold shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] active:shadow-[inset_-12px_-8px_40px_#46464620]">Hecho</button>
+                            </div>
+                        </div>
+                        </dialog>
                     </form>
     )
 }
