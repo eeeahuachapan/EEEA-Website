@@ -1,6 +1,6 @@
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
-import { Navigate, useNavigate } from "react-router-dom";
+import { Navigate, useNavigate, Link } from "react-router-dom";
 
 function Home() {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ function Home() {
         <img src='/src/assets/banner.webp' alt='logo' className='object-cover h-full w-full relative brightness-50' />
       </div>
 
-      <div className='w-full h-auto flex flex-col items-center bg-shapes'> 
+      <div className='w-full h-auto flex flex-col items-center bg-shapes '> 
       <div className='w-11/12 h-4/5 bg-primary rounded-md flex flex-col items-center p-5 my-5 lg:mt-12 gap-3 lg:w-10/12 lg:h-auto
     shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
         <h1 className='text-secondary font-semibold text-xl lg:text-3xl lg:font-extrabold'>Sobre nosotros</h1>
@@ -44,20 +44,20 @@ function Home() {
       <h1 className='font-bold text-secondary text-xl lg:text-3xl lg:font-extrabold lg:mt-12'>Secciones de interés </h1>
 
       <section className='lg:flex lg:my-5 lg:mb-12 '>
-        <div className='w-full flex flex-col items-center'>
+        <Link to={'/AcademicOffer'} className='w-full flex flex-col items-center hover:scale-110'>
           <img src='/src/assets/OfertaAcademica.svg' alt='section1' className='w-1/3 py-5  lg:py-4 ' />
           <h2 className='bg-primary rounded-md py-1 px-2 w-1/2 text-center font-semibold text-secondary'>Oferta académica</h2>
-        </div>
+        </Link>
 
-        <div className='w-full flex flex-col items-center'>
+        <Link to={'/Events'}  className='w-full flex flex-col items-center hover:scale-110'>
           <img src='/src/assets/Calendario.svg' alt='section1' className='w-1/3 py-5 lg:py-4 ' />
           <h2 className='bg-primary rounded-md py-1 px-2 w-1/2 text-center font-semibold text-secondary'>Eventos</h2>
-        </div>
+        </Link>
 
-        <div className='w-full flex flex-col items-center'>
+        <Link to={'/facilities'}  className='w-full flex flex-col items-center hover:scale-110'>
           <img src='/src/assets/Instalaciones.svg' alt='section1' className='w-2/5 py-5 lg:py-0 ' />
           <h2 className='bg-primary rounded-md py-1 px-2 w-1/2 text-center font-semibold text-secondary'>Instalaciones</h2>
-        </div>
+        </Link>
       </section>
       </div>
      
