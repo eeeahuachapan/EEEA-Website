@@ -1,7 +1,30 @@
 import Footer from "../../components/footer/Footer"
 import Navbar from "../../components/navbar/Navbar"
+import Loader from "../../components/loader/Loader"
+import { useEffect, useState } from "react";
+import { getFacilities } from "../../services/facilityService";
 
 function Facilities() {
+    const [loading, setLoading] = useState(false);
+    const [facilities, setFacilities] = useState([]);
+
+    const getData = async () => {
+        try {
+            setLoading(true);
+            const data = await getFacilities();
+            if (data) {
+                setFacilities(data);
+                setLoading(false);
+            }
+        } catch (error) {
+            console.error('Error al obtener datos de la API:', error);
+        }
+    };
+
+    useEffect(() => {
+        getData();
+    }, []);
+
     return (
         <div className="h-screen min-h-screen flex flex-col items-center font-Montserrat">
             <Navbar />
@@ -15,21 +38,22 @@ function Facilities() {
                 </div>
 
                 <div className="w-11/12 lg:w-3/5 h-60 lg:h-96 my-6 carousel rounded-box">
-                    <div className="carousel-item w-full">
-                        <img src="/escuelas.png" className="w-full object-contain" />
-                    </div>
-                    <div className="carousel-item w-full">
-                        <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" className="w-full object-contain" />
-                    </div>
-                    <div className="carousel-item w-full">
-                        <img src="/escuelas.png" className="w-full object-contain" alt="Tailwind CSS Carousel component" />
-                    </div>
-                    <div className="carousel-item w-full">
-                        <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" className="w-full object-contain" />
-                    </div>
-                    <div className="carousel-item w-full">
-                        <img src="/escuelas.png" className="w-full object-contain" alt="Tailwind CSS Carousel component" />
-                    </div>
+                {loading && (
+                        <div className="w-full h-full flex items-center justify-center">
+                            <Loader />
+                        </div>)}
+
+                    {facilities.length > 0 ? (
+                        facilities.map(facility => (
+                            <div key={facility.id} className="carousel-item w-full">
+                                <img src={facility.url} className="w-full object-contain" alt={facility.name} />
+                            </div>
+                        ))
+                    ) : (
+                        <div className="w-full flex justify-center items-center">
+                            <p>No se encontraron instalaciones.</p>
+                        </div>
+                    )}
                 </div>
             </section>
 
