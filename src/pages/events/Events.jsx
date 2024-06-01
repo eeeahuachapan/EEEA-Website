@@ -51,7 +51,7 @@ function Events() {
         <div className="h-screen min-h-screen flex flex-col items-center font-Montserrat">
             <Navbar />
 
-            <h1 className='font-bold text-secondary text-xl lg:text-3xl lg:font-extrabold lg:my-3'>Eventos</h1>
+            <h1 className='font-bold text-secondary text-xl lg:text-3xl lg:font-extrabold my-3'>Eventos</h1>
 
             <section className="w-full  lg:h-5/6 flex flex-col lg:flex-row items-end lg:items-stretch min-h-4/6 lg:bg-shapes lg:z-0  ">
 

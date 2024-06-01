@@ -11,7 +11,7 @@ function ContactUs() {
             <div className='w-full h-auto flex flex-col items-center bg-shapes'>
                 <h1 className='font-bold text-secondary text-xl lg:text-3xl lg:font-extrabold lg:my-6'>Contáctenos</h1>
 
-                <div className="flex flex-col items-center w-full h-fit gap-6 p-4 lg:px-14">
+                <div className="flex flex-col items-center w-full h-fit gap-6 px-2 py-4 lg:px-14">
                     <div className="grid lg:grid-cols-3 w-full h-fit gap-6 lg:gap-8">
                         <section className="order-last lg:order-first bg-slate-400">
                             <div className="google-map-code w-full h-96 lg:h-full">
