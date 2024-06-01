@@ -6,7 +6,6 @@ import { getEvents } from "../../services/eventService";
 import Loader from "../../components/loader/Loader";
 
 function Events() {
-
     const [loading, setLoading] = useState(false);
     const [events, setEvents] = useState([])
     const [completed, setCompleted] = useState(null);
@@ -52,7 +51,7 @@ function Events() {
         <div className="h-screen min-h-screen flex flex-col items-center font-Montserrat">
             <Navbar />
 
-            <h1 className='font-bold text-secondary text-xl lg:text-3xl lg:font-extrabold lg:my-3'>Eventos</h1>
+            <h1 className='font-bold text-secondary text-xl lg:text-3xl lg:font-extrabold my-3'>Eventos</h1>
 
             <section className="w-full  lg:h-5/6 flex flex-col lg:flex-row items-end lg:items-stretch min-h-4/6 lg:bg-shapes lg:z-0  ">
 
@@ -72,18 +71,18 @@ function Events() {
 
                         <p className="py-4 font-bold">Mes</p>
                         <div className="flex gap-4 w-full flex-wrap">
-                            <button onClick={() => toggleMonth(1)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 1 ? 'bg-accent text-white border-none hover:border-black hover:bg-accent' : ''}`}>Enero</button>
-                            <button onClick={() => toggleMonth(2)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 2 ? 'bg-accent text-white border-none hover:border-black hover:bg-accent' : ''}`}>Febrero</button>
-                            <button onClick={() => toggleMonth(3)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 3 ? 'bg-accent text-white border-none hover:border-black hover:bg-accent' : ''}`}>Marzo</button>
-                            <button onClick={() => toggleMonth(4)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 4 ? 'bg-accent text-white border-none hover:border-black hover:bg-accent' : ''}`}>Abril</button>
-                            <button onClick={() => toggleMonth(5)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 5 ? 'bg-accent text-white border-none hover:border-black hover:bg-accent' : ''}`}>Mayo</button>
-                            <button onClick={() => toggleMonth(6)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 6 ? 'bg-accent text-white border-none hover:border-black hover:bg-accent' : ''}`}>Junio</button>
-                            <button onClick={() => toggleMonth(7)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 7 ? 'bg-accent text-white border-none hover:border-black hover:bg-accent' : ''}`}>Julio</button>
-                            <button onClick={() => toggleMonth(8)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 8 ? 'bg-accent text-white border-none hover:border-black hover:bg-accent' : ''}`}>Agosto</button>
-                            <button onClick={() => toggleMonth(9)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 9 ? 'bg-accent text-white border-none hover:border-black hover:bg-accent' : ''}`}>Septiembre</button>
-                            <button onClick={() => toggleMonth(10)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 10 ? 'bg-accent text-white border-none hover:border-black hover:bg-accent' : ''}`}>Octubre</button>
-                            <button onClick={() => toggleMonth(11)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 11 ? 'bg-accent text-white border-none hover:border-black hover:bg-accent' : ''}`}>Noviembre</button>
-                            <button onClick={() => toggleMonth(12)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 12 ? 'bg-accent text-white border-none hover:border-black hover:bg-accent' : ''}`}>Diciembre</button>
+                            <button onClick={() => toggleMonth(1)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 1 ? 'bg-accent text-white border-none hover:bg-accent' : ''}`}>Enero</button>
+                            <button onClick={() => toggleMonth(2)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 2 ? 'bg-accent text-white border-none hover:bg-accent' : ''}`}>Febrero</button>
+                            <button onClick={() => toggleMonth(3)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 3 ? 'bg-accent text-white border-none hover:bg-accent' : ''}`}>Marzo</button>
+                            <button onClick={() => toggleMonth(4)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 4 ? 'bg-accent text-white border-none hover:bg-accent' : ''}`}>Abril</button>
+                            <button onClick={() => toggleMonth(5)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 5 ? 'bg-accent text-white border-none hover:bg-accent' : ''}`}>Mayo</button>
+                            <button onClick={() => toggleMonth(6)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 6 ? 'bg-accent text-white border-none hover:bg-accent' : ''}`}>Junio</button>
+                            <button onClick={() => toggleMonth(7)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 7 ? 'bg-accent text-white border-none hover:bg-accent' : ''}`}>Julio</button>
+                            <button onClick={() => toggleMonth(8)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 8 ? 'bg-accent text-white border-none hover:bg-accent' : ''}`}>Agosto</button>
+                            <button onClick={() => toggleMonth(9)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 9 ? 'bg-accent text-white border-none hover:bg-accent' : ''}`}>Septiembre</button>
+                            <button onClick={() => toggleMonth(10)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 10 ? 'bg-accent text-white border-none hover:bg-accent' : ''}`}>Octubre</button>
+                            <button onClick={() => toggleMonth(11)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 11 ? 'bg-accent text-white border-none hover:bg-accent' : ''}`}>Noviembre</button>
+                            <button onClick={() => toggleMonth(12)} className={`btn btn-sm font-bold border-zinc-800 border-2 rounded-xl ${month === 12 ? 'bg-accent text-white border-none hover:bg-accent' : ''}`}>Diciembre</button>
                         </div>
                         <div className="modal-action">
                             <form method="dialog">
@@ -114,24 +113,24 @@ function Events() {
                     <button onClick={() => toggleMonth(12)} className={`btn btn-sm border-white ${month === 12 ? 'bg-accent text-white hover:border-black hover:bg-accent' : ''}`}>Diciembre</button>
                 </div>
 
-    <div className="flex flex-col w-full h-auto min-h-screen lg:min-h-fit lg:h-auto lg:w-11/12 gap-6 lg:px-0 py-6 px-2  lg:overflow-y-auto lg:flex-row lg:flex-wrap">
-            
-            {loading && (
-            <div className="w-full h-full flex items-center justify-center">
-            <span className="loading loading-spinner loading-lg text-primary"></span>
-            </div>)}
-            
-                    {events.length === 0 && loading === false ? (
-                <div className="w-full flex flex-col lg:justify-center items-center gap-5">
-                <h1 className="text-center text-3xl text-primary font-bold w-full">No se encontraron eventos</h1>
-                </div>
-            ) : (
-                events.map((event) => (
-                    <EventItem key={event.id} event={event} location={event.location}/>
-                ))
-            )}
+                <div className="flex flex-col w-full h-auto min-h-screen lg:min-h-fit lg:h-auto lg:w-11/12 gap-6 lg:px-0 py-6 px-2  lg:overflow-y-auto lg:flex-row lg:flex-wrap">
 
-            </div>
+                    {loading && (
+                        <div className="w-full h-full flex items-center justify-center">
+                            <Loader />
+                        </div>)}
+
+                    {events.length === 0 && loading === false ? (
+                        <div className="w-full flex flex-col lg:justify-center items-center gap-5">
+                            <h1 className="text-center text-3xl text-primary font-bold w-full">No se encontraron eventos</h1>
+                        </div>
+                    ) : (
+                        events.map((event) => (
+                            <EventItem key={event.id} event={event} location={event.location} />
+                        ))
+                    )}
+
+                </div>
             </section>
 
             <Footer />
