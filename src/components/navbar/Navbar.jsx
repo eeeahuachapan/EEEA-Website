@@ -21,37 +21,28 @@ function Navbar() {
           <div className='navbar-end w-full flex gap-3 pr-8 '>
             <ul className="menu menu-horizontal  px-1 text-sm gap-5 lg:flex hidden">
 
-              <li><Link to='/' className=' hover:bg-slate-100'>Inicio</Link></li>
-              <li className='' tabIndex={0}>
-                <details>
-                  <summary className='font-Montserrat  hover:bg-slate-100'>Acerca de</summary>
-                  <ul className="p-2 w-40 bg-white">
-                    <li>
-                      <Link to='/aboutus' className=' hover:bg-slate-100'>
-                        Nosotros
-                      </Link>
-                    </li>
-                    <li className=' hover:bg-slate-100'>
-                      <Link to='/facilities'>
-                        Instalaciones
-                      </Link>
-                    </li>
-
-                  </ul>
-                </details>
-              </li>
-
-              <li><Link to='/AcademicOffer' className=' hover:bg-slate-100  '>Oferta académica</Link></li>
+              <li><Link to='/' className=' hover:bg-slate-200'>Inicio</Link></li>
               <li tabIndex={0}>
                 <details>
-                  <summary className=' hover:bg-slate-100'>Vida estudiantil</summary>
-                  <ul className="p-2 bg-white w-40 ">
-                    <li ><Link to='/calendar' className='hover:bg-slate-100 '>Calendario</Link></li>
-                    <li><Link to='/events' className=' hover:bg-slate-100'>Eventos</Link></li>
+                  <summary className='font-Montserrat  hover:bg-slate-200'>Acerca de</summary>
+                  <ul className="p-2 w-40 bg-white">
+                    <li><Link to='/aboutus' className=' hover:bg-slate-200'>Nosotros</Link></li>
+                    <li><Link to='/facilities' className='hover:bg-slate-200'>Instalaciones</Link></li>
                   </ul>
                 </details>
               </li>
-              <li><Link to='/contactus' className=' hover:bg-slate-100'>Contáctenos</Link></li>
+
+              <li><Link to='/AcademicOffer' className='hover:bg-slate-200'>Oferta académica</Link></li>
+              <li tabIndex={0}>
+                <details>
+                  <summary className=' hover:bg-slate-200'>Vida estudiantil</summary>
+                  <ul className="p-2 bg-white w-40 ">
+                    <li ><Link to='/calendar' className='hover:bg-slate-200 '>Calendario</Link></li>
+                    <li><Link to='/events' className=' hover:bg-slate-200'>Eventos</Link></li>
+                  </ul>
+                </details>
+              </li>
+              <li><Link to='/contactus' className=' hover:bg-slate-200'>Contáctenos</Link></li>
             </ul>
           </div>
         </div>
@@ -61,39 +52,38 @@ function Navbar() {
         <ul className="menu p-4 py-16 w-64 font-semibold text-base  min-h-full bg-white gap-2  z-50">
           {/* Sidebar content here */}
           <li>
-            <Link to='/' >
+            <Link to='/' className='hover:bg-slate-200'>
               Inicio
             </Link>
           </li>
           <li tabIndex={0}>
             <details>
-              <summary>Acerca de</summary>
+              <summary className='hover:bg-slate-200'>Acerca de</summary>
               <ul className="p-2">
                 <li>
-                  <Link to='/aboutus' >
+                  <Link to='/aboutus' className='hover:bg-slate-200'>
                     Nosotros
                   </Link>
                 </li>
                 <li>
-                  <Link to='/facilities'>
+                  <Link to='/facilities' className='hover:bg-slate-200'>
                     Instalaciones
                   </Link>
                 </li>
               </ul>
             </details>
           </li>
-          <li><Link to='/AcademicOffer'>Oferta académica</Link></li>
+          <li><Link to='/AcademicOffer' className='hover:bg-slate-200'>Oferta académica</Link></li>
           <li tabIndex={0}>
             <details>
-              <summary>Vida estudiantil</summary>
+              <summary className='hover:bg-slate-200'>Vida estudiantil</summary>
               <ul className="p-2">
-                <li><Link to='/calendar'>Calendario</Link></li>
-                <li><Link to='/events'>Eventos</Link></li>
+                <li><Link to='/calendar' className='hover:bg-slate-200'>Calendario</Link></li>
+                <li><Link to='/events' className='hover:bg-slate-200'>Eventos</Link></li>
               </ul>
             </details>
           </li>
-          <li><Link to='/contactus'>Contáctenos</Link></li>
-
+          <li><Link to='/contactus' className='hover:bg-slate-200'>Contáctenos</Link></li>
 
         </ul>
 
