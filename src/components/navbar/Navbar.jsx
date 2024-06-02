@@ -13,7 +13,7 @@ function Navbar() {
             </label>
           </div>
           <div className="navbar-start lg:w-1/12 lg:px-0 lg:mx-5 flex lg:items-center lg:justify-center">
-            <img className="w-18 h-12" src='/src/assets/logo.png' />
+            <Link to={'/'}><img className="w-18 h-12" src='/src/assets/logo.png' /></Link>
           </div>
           <div className="flex-none hidden lg:block">
 
