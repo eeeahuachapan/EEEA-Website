@@ -114,7 +114,7 @@ function Events() {
                     <button onClick={() => toggleMonth(12)} className={`text-xs btn btn-xs border-white ${month === 12 ? 'bg-accent text-white hover:border-black hover:bg-accent' : ''}`}>Diciembre</button>
                 </div>
 
-                <div className="flex flex-col w-full h-auto min-h-screen lg:min-h-fit lg:h-auto lg:w-11/12 gap-6 lg:px-10 py-6 px-2 lg:overflow-y-auto lg:flex-row lg:flex-wrap">
+                <div className="flex flex-col w-full h-auto min-h-screen lg:min-h-fit lg:h-auto lg:w-11/12 gap-6 lg:px-10 py-6 px-2 lg:overflow-y-auto lg:flex-row items-center justify-between lg:flex-wrap">
 
                     {loading && (
                         <div className="w-full h-full flex items-center justify-center">
