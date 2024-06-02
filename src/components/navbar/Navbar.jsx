@@ -7,7 +7,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (!dropdownRefs.current.some(ref => ref.contains(event.target))) {
+      if (!dropdownRefs.current.some(ref => ref.contains(event.target))){
         setOpenDropdown(null);
       }
     };
@@ -16,12 +16,12 @@ function Navbar() {
     return () => {
       document.removeEventListener('click', handleClickOutside);
     };
-  }, []);
+  }, [openDropdown]);
 
   const handleDropdownToggle = (index) => {
-    setOpenDropdown(openDropdown === index ? null : index);
+    setOpenDropdown(openDropdown === index ? openDropdown : index);
   };
-  
+
   return (
     <div className="drawer drawer-end font-Montserrat ">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -45,10 +45,10 @@ function Navbar() {
                 <details className={`relative ${openDropdown === 0 ? 'open' : ''}`}>
                   <summary className='font-Montserrat  hover:bg-slate-200' onClick={() => handleDropdownToggle(0)}>Acerca de</summary>
                   {openDropdown === 0 && (
-                  <ul className="p-2 w-40 bg-white">
-                    <li><Link to='/sobre-nosotros' className=' hover:bg-slate-200'>Nosotros</Link></li>
-                    <li><Link to='/instalaciones' className='hover:bg-slate-200'>Instalaciones</Link></li>
-                  </ul>
+                    <ul className="p-2 w-40 bg-white">
+                      <li><Link to='/sobre-nosotros' className=' hover:bg-slate-200'>Nosotros</Link></li>
+                      <li><Link to='/instalaciones' className='hover:bg-slate-200'>Instalaciones</Link></li>
+                    </ul>
                   )}
                 </details>
               </li>
@@ -58,10 +58,10 @@ function Navbar() {
                 <details className={`relative ${openDropdown === 1 ? 'open' : ''}`}>
                   <summary className=' hover:bg-slate-200' onClick={() => handleDropdownToggle(1)}>Vida estudiantil</summary>
                   {openDropdown === 1 && (
-                  <ul className="p-2 bg-white w-40 ">
-                    <li ><Link to='/calendario-academico' className='hover:bg-slate-200 '>Calendario</Link></li>
-                    <li><Link to='/eventos' className=' hover:bg-slate-200'>Eventos</Link></li>
-                  </ul>
+                    <ul className="p-2 bg-white w-40 ">
+                      <li ><Link to='/calendario-academico' className='hover:bg-slate-200 '>Calendario</Link></li>
+                      <li><Link to='/eventos' className=' hover:bg-slate-200'>Eventos</Link></li>
+                    </ul>
                   )}
                 </details>
               </li>
