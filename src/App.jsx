@@ -13,12 +13,12 @@ function App() {
     <BrowserRouter>
     <Routes>
         <Route path="/" Component={Home} />
-        <Route path="/AboutUs" Component={AboutUs} />
-        <Route path="/AcademicOffer" Component={AcademicOffer} />
-        <Route path="/Facilities" Component={Facilities} />
-        <Route path="/Calendar" Component={Calendar} />
-        <Route path="/Events" Component={Events} />
-        <Route path="/ContactUs" Component={ContactUs} />
+        <Route path="/sobre-nosotros" Component={AboutUs} />
+        <Route path="/oferta-academica" Component={AcademicOffer} />
+        <Route path="/instalaciones" Component={Facilities} />
+        <Route path="/calendario-academico" Component={Calendar} />
+        <Route path="/eventos" Component={Events} />
+        <Route path="/contactenos" Component={ContactUs} />
         <Route path="/*" Component={Home} />
         
       </Routes>

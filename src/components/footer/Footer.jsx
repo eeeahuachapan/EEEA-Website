@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Footer() {
     return (
         <div className='bg-secondary h-2/5 w-full font-Montserrat text-white flex flex-col lg:flex-row lg:px-24 gap-5 py-8 mt-5 bottom-0 '>
@@ -9,13 +11,13 @@ function Footer() {
             <div className='lg:flex hidden w-1/2 justify-between gap-6'>
                 <div className='flex flex-col items-start justify-center text-xs lg:gap-1 lg:text-sm '>
                     <p className='font-semibold text-left'>Acerca de</p>
-                    <p className='text-left'>Nosotros</p>
-                    <p>Instalaciones</p>
+                    <Link to={'/sobre-nosotros'}><p className='text-left underline'>Nosotros</p></Link>
+                    <Link to={'/instalaciones'}><p className="text-left underline">Instalaciones</p></Link>
                 </div>
                 <div className='flex flex-col items-start  justify-center text-xs lg:gap-1 lg:text-sm'>
                     <p className='font-semibold'>Vida estudiantil</p>
-                    <p>Calendario</p>
-                    <p>Eventos</p>
+                    <Link to={'/calendario-academico'}><p className="text-left underline">Calendario</p></Link>
+                    <Link to={'/eventos'}><p className="text-left underline">Eventos</p></Link>
                 </div>
                 <div className='flex flex-col items-start justify-center text-xs h-1/2 lg:h-full lg:gap-1 lg:text-sm '>
                     <p className='font-semibold'>Contáctenos</p>
