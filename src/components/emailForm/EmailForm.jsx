@@ -32,11 +32,9 @@ function EmailForm() {
             console.log("Enviando correo...");
 
             const { name, lastname, email, message, phoneNumber } = formData;
-            console.log(formData);
             await sendEmail(name, lastname, email, message, phoneNumber);
             setFormData(initialState);
             document.getElementById('my_modal_1').showModal();
-            console.log('Correo enviado exitosamente');
         } catch (error) {
             console.error("Error al enviar el correo:", error);
         }

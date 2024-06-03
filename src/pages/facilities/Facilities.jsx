@@ -33,8 +33,11 @@ function Facilities() {
 
             <section className="h-screen flex flex-col lg:flex-row-reverse items-center justify-between lg:px-16 lg:gap-16 m-2">
                 <div className='w-full lg:w-3/5 flex flex-col items-center p-2 lg:pl-12 bg-white rounded-md'>
-                    <p className='text-sm lg:text-xl text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        <br /> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p className='text-sm lg:text-lg text-justify'>
+                    Contamos con rampas de acceso que facilitan la entrada a personas con discapacidad motora o en silla de ruedas, tanto para acceder a la institución como para acceder a cualquier instalación dentro de ella. <br />
+                    Nuestra institución posee servicios sanitarios adecuados para niños con discapacidad.<br />
+                    Además, se dispone de una cancha para la recreación de los alumnos en sus recreos y clases, rodeada de áreas verdes. <br />
+                    Actualmente, nuestro centro educativo se encuentra en la lista de escuelas que serán remodeladas por parte del proyecto de "Mi nueva escuela". Esperamos que nuestra infraestructura mejore con el tiempo.</p>
                 </div>
 
                 <div className="w-11/12 lg:w-3/5 h-60 lg:h-96 my-6 carousel rounded-box">
