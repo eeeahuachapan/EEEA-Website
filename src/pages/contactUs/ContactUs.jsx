@@ -27,12 +27,12 @@ function ContactUs() {
                             <dt className="text-xl lg:text-2xl font-semibold pb-3">Información de Contacto</dt>
 
                             <div className="flex justify-center w-full p-1">
-                                <img src="src\assets\email-svgrepo-com 1.png" alt="" className='w-16 h-16' />
+                                <img src="src\assets\email-svgrepo-com 1.webp" alt="" className='w-16 h-16' />
                             </div>
                             <dd className="text-base lg:text-lg pb-4">Correo electrónico: roxana.carmen.chiguila@clases.edu.sv</dd>
 
                             <div className="flex justify-center w-full p-1">
-                                <img src="src\assets\phone-call-svgrepo-com 1.png" alt="" className='w-16 h-16' />
+                                <img src="src\assets\phone-call-svgrepo-com 1.webp" alt="" className='w-16 h-16' />
                             </div>
                             <dd className="text-base lg:text-lg">Teléfono: (503) 7887-4853</dd>
                         </dl>
@@ -44,7 +44,7 @@ function ContactUs() {
                             <dd className="text-base lg:text-lg pb-2">Vespertino: 1:00 PM - 5:30 PM</dd>
 
                             <div className='flex justify-center w-full p-1'>
-                                <img src="src\assets\location-pin-svgrepo-com 1.png" alt="" className='w-16 h-16' />
+                                <img src="src\assets\location-pin-svgrepo-com 1.webp" alt="" className='w-16 h-16' />
                             </div>
                             <dd className="text-base lg:text-lg">Dirección: Col. Zacamil, esquina opuesta a Hospital General de Ahuachapán Francisco Menéndez.</dd>
                         </dl>
