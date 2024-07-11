@@ -2,7 +2,6 @@ import axios from "axios";
 
 export const getEvents = async ({ month, completed }) => {
   try {
-    console.log('month', month);
     if (month !== null) {
       const response = await axios.get(`/events?year=2024&startMonth=${month}&endMonth=${month}&groupedByMonth=false${completed !== null ? `&completed=${completed}` : ''}`);
 

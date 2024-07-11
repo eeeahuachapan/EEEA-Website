@@ -17,7 +17,6 @@ function Events() {
             let response = await getEvents({ month, completed });
             if (response) {
                 setEvents(response.data.events);
-                console.log(response.data.events);
             }
             setLoading(false);
         } catch (error) {
@@ -44,7 +43,6 @@ function Events() {
 
     useEffect(() => {
         getData();
-        console.log('completed', completed);
     }, [completed, month]);
 
     return (
@@ -114,17 +112,16 @@ function Events() {
                     <button onClick={() => toggleMonth(12)} className={`text-xs btn btn-xs border-white ${month === 12 ? 'bg-accent text-white hover:border-black hover:bg-accent' : ''}`}>Diciembre</button>
                 </div>
 
-                {/*<div className="flex flex-col w-full h-auto min-h-screen lg:min-h-fit lg:h-auto lg:w-11/12 gap-6 lg:px-10 py-6 px-2 lg:overflow-y-auto lg:flex-row items-center justify-start lg:justify-between lg:flex-wrap">*/}
                 <div className="flex flex-col lg:flex-row w-full lg:w-11/12 lg:flex-wrap lg:justify-between items-center gap-6 p-6 lg:overflow-y-auto lg:bg-shapes lg:z-0">
 
 
                     {loading && (
-                        <div className="flex h-screen items-center justify-center">
+                        <div className="flex min-h-screen items-center justify-center">
                             <Loader />
                         </div>)}
 
                     {events.length === 0 && loading === false ? (
-                        <div className="w-full h-screen lg:h-auto flex flex-col justify-center items-center gap-5">
+                        <div className="w-full min-h-screen lg:h-auto flex flex-col justify-center items-center gap-5">
                             <h1 className="text-center text-3xl text-primary font-bold w-full">No se encontraron eventos</h1>
                         </div>
                     ) : (

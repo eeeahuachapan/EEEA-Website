@@ -17,7 +17,6 @@ export const getAllActivities = async () => {
 
 export const getActivitiesByMonth = async ( month ) => {
     try {
-        console.log("getActivitiesByMonth called with month:", month);
         const response = await axios.get(`/activities/month/${month}`);
 
         if (response.status === 200) {

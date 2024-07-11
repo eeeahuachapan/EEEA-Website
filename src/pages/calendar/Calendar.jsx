@@ -17,7 +17,6 @@ function Calendar() {
 
             if (response) {
                 setActivities(response.data.activities);
-                console.log("Activities fetched:", response.data.activities);
             }
             setLoading(false);
         } catch (error) {
@@ -33,7 +32,6 @@ function Calendar() {
 
             if (response) {
                 setActivities(response.data);
-                console.log("Activities fetched:", response.data);
             }
             setLoading(false);
         } catch (error) {
@@ -43,14 +41,11 @@ function Calendar() {
     };
 
     const toggleMonth = (num) => {
-        console.log("Toggling month. Current month:", month, " New month:", num);
         if (month === num) {
             setMonth(null);
-            console.log("Month set to null");
             return;
         } else {
             setMonth(num);
-            console.log("Month set to:", num);
         }
     };
 
