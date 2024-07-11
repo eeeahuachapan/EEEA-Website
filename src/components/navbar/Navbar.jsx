@@ -107,7 +107,7 @@ function Navbar() {
               </ul>
             </details>
           </li>
-          <li><Link to='/sobre-nosotros' className='hover:bg-slate-200'>Contáctenos</Link></li>
+          <li><Link to='/contactenos' className='hover:bg-slate-200'>Contáctenos</Link></li>
 
         </ul>
 

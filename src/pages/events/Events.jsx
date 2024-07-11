@@ -53,7 +53,7 @@ function Events() {
 
             <h1 className='font-bold text-secondary text-xl lg:text-3xl lg:font-extrabold my-3'>Eventos</h1>
 
-            <section className="w-full  lg:h-5/6 flex flex-col lg:flex-row items-end lg:items-stretch min-h-4/6 lg:bg-shapes lg:z-0  ">
+            <section className="w-full lg:h-5/6 flex flex-col lg:flex-row items-end lg:items-stretch lg:bg-shapes lg:z-0  ">
 
                 <button className="btn btn-sm bg-accent text-white border-none w-2/6 lg:hidden flex justify-between px-4 mr-5" onClick={() => document.getElementById('filters').showModal()}>
                     Filtros
@@ -114,15 +114,17 @@ function Events() {
                     <button onClick={() => toggleMonth(12)} className={`text-xs btn btn-xs border-white ${month === 12 ? 'bg-accent text-white hover:border-black hover:bg-accent' : ''}`}>Diciembre</button>
                 </div>
 
-                <div className="flex flex-col w-full h-auto min-h-screen lg:min-h-fit lg:h-auto lg:w-11/12 gap-6 lg:px-10 py-6 px-2 lg:overflow-y-auto lg:flex-row items-center justify-between lg:flex-wrap">
+                {/*<div className="flex flex-col w-full h-auto min-h-screen lg:min-h-fit lg:h-auto lg:w-11/12 gap-6 lg:px-10 py-6 px-2 lg:overflow-y-auto lg:flex-row items-center justify-start lg:justify-between lg:flex-wrap">*/}
+                <div className="flex flex-col lg:flex-row w-full lg:w-11/12 lg:flex-wrap lg:justify-between items-center gap-6 p-6 lg:overflow-y-auto lg:bg-shapes lg:z-0">
+
 
                     {loading && (
-                        <div className="w-full h-full flex items-center justify-center">
+                        <div className="flex h-screen items-center justify-center">
                             <Loader />
                         </div>)}
 
                     {events.length === 0 && loading === false ? (
-                        <div className="w-full flex flex-col lg:justify-center items-center gap-5">
+                        <div className="w-full h-screen lg:h-auto flex flex-col justify-center items-center gap-5">
                             <h1 className="text-center text-3xl text-primary font-bold w-full">No se encontraron eventos</h1>
                         </div>
                     ) : (

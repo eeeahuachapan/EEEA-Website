@@ -14,7 +14,7 @@ function Calendar() {
         try {
             setLoading(true);
             const response = await getAllActivities();
-          
+
             if (response) {
                 setActivities(response.data.activities);
                 console.log("Activities fetched:", response.data.activities);
@@ -29,8 +29,8 @@ function Calendar() {
     const getMonthData = async () => {
         try {
             setLoading(true);
-            const response = await getActivitiesByMonth( month );
-          
+            const response = await getActivitiesByMonth(month);
+
             if (response) {
                 setActivities(response.data);
                 console.log("Activities fetched:", response.data);
