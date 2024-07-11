@@ -16,7 +16,7 @@ function Home() {
       <div className='h-1/5 w-full  -z-10 flex flex-col justify-center  lg:items-center lg:h-1/3'>
 
         <h1 className='text-white font-extrabold absolute z-10 text-1xl w-full px-4 text-center lg:text-5xl lg:px-32'>ESCUELA DE EDUCACIÓN ESPECIAL DE AHUACHAPÁN</h1>
-        <img src='/src/assets/banner.webp' alt='logo' className='object-cover h-full w-full relative brightness-50' />
+        <img src='/assets/banner.webp' alt='logo' className='object-cover h-full w-full relative brightness-50' />
       </div>
 
       <div className='w-full h-auto flex flex-col items-center bg-shapes '>
@@ -31,7 +31,7 @@ function Home() {
               <button onClick={navigateToAboutUs} className='bg-accent hover:bg-accent_hover active:bg-accent_active text-white rounded-md py-2 my-2 w-3/5 font-semibold lg:text-xl lg:font-bold 
     shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] active:shadow-[inset_-12px_-8px_40px_#46464620]'>Conocer más</button>
             </div>
-            <img src="/src/assets/Picture1.webp" alt="" className='hidden lg:flex  w-2/5 h-4/5 object-cover rounded-md' />
+            <img src="/assets/Picture1.webp" alt="" className='hidden lg:flex  w-2/5 h-4/5 object-cover rounded-md' />
           </section>
 
         </div>
@@ -40,17 +40,17 @@ function Home() {
 
         <section className='lg:flex lg:my-5 lg:mb-12 p-5 lg:p-10 lg:overflow-hidden'>
           <Link to={'/oferta-academica'} className='w-full flex flex-col items-center hover:scale-110'>
-            <img src='/src/assets/OfertaAcademica.webp' alt='section1' className='w-1/3 py-5  lg:py-4 ' />
+            <img src='/assets/OfertaAcademica.webp' alt='section1' className='w-1/3 py-5  lg:py-4 ' />
             <h2 className='bg-primary rounded-md py-1 px-2 w-1/2 text-center font-semibold text-secondary'>Oferta académica</h2>
           </Link>
 
           <Link to={'/eventos'} className='w-full flex flex-col items-center hover:scale-110'>
-            <img src='/src/assets/Calendario.webp' alt='section1' className='w-1/3 py-5 lg:py-4 ' />
+            <img src='/assets/Calendario.webp' alt='section1' className='w-1/3 py-5 lg:py-4 ' />
             <h2 className='bg-primary rounded-md py-1 px-2 w-1/2 text-center font-semibold text-secondary'>Eventos</h2>
           </Link>
 
           <Link to={'/instalaciones'} className='w-full flex flex-col items-center hover:scale-110'>
-            <img src='/src/assets/Instalaciones.webp' alt='section1' className='w-2/5 py-5 lg:py-0 ' />
+            <img src='/assets/Instalaciones.webp' alt='section1' className='w-2/5 py-5 lg:py-0 ' />
             <h2 className='bg-primary rounded-md py-1 px-2 w-1/2 text-center font-semibold text-secondary'>Instalaciones</h2>
           </Link>
         </section>

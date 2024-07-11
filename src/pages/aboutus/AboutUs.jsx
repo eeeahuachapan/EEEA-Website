@@ -8,7 +8,7 @@ function AboutUs() {
 
       <div className='h-1/5 w-full flex flex-col justify-center items-center lg:h-1/3'>
         <h1 className='text-white font-extrabold absolute z-10 text-2xl text-center lg:text-5xl lg:px-32'>SOBRE NOSOTROS</h1>
-        <img src='/src/assets/banner.webp' alt='logo' className='object-cover h-full w-full relative brightness-50' />
+        <img src='/assets/banner.webp' alt='logo' className='object-cover h-full w-full relative brightness-50' />
       </div>
 
       <p className='px-5 text-sm lg:w-10/12 lg:text-base mt-5 lg:mt-12 text-justify'>El referente de evaluación que se tiene en este centro educativo es la aplicación de las pruebas psicológicas que son parte del protocolo de atención a los estudiantes, aplicadas por psicólogos y evaluaciones pedagógicas realizadas por los docentes, estas muestran resultados que indican el nivel de discapacidad intelectual, con los cuales es necesaria la implementación de estrategias metodológicas con adecuaciones curriculares según la limitante de cada estudiante. A partir de los resultados obtenidos, las docentes elaboran un expediente por estudiante, y con esta base se elabora y planifica la atención educativa y curricular para cada estudiante en particular.
@@ -46,7 +46,7 @@ function AboutUs() {
             <a className='font-bold'>Gratitud:</a> Sentirnos satisfechos con las personas involucradas en el proceso formativo de los estudiantes.</p>
         </div>
         <div className='flex justify-center w-full'>
-          <img src="/src/assets/Picture3.webp" alt="" className='w-11/12 h-1/3 object-cover rounded-lg lg:h-72 lg:object-center lg:w-2/3 ' />
+          <img src="/assets/Picture3.webp" alt="" className='w-11/12 h-1/3 object-cover rounded-lg lg:h-72 lg:object-center lg:w-2/3 ' />
         </div>
       </section>
 

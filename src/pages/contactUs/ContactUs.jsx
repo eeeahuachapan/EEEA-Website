@@ -27,12 +27,12 @@ function ContactUs() {
                             <dt className="text-xl lg:text-2xl font-semibold pb-3">Información de Contacto</dt>
 
                             <div className="flex justify-center w-full p-1">
-                                <img src="src\assets\email-svgrepo-com 1.webp" alt="" className='w-16 h-16' />
+                                <img src="/assets/email-svgrepo-com 1.webp" alt="" className='w-16 h-16' />
                             </div>
                             <dd className="text-base lg:text-lg pb-4">Correo electrónico: roxana.carmen.chiguila@clases.edu.sv</dd>
 
                             <div className="flex justify-center w-full p-1">
-                                <img src="src\assets\phone-call-svgrepo-com 1.webp" alt="" className='w-16 h-16' />
+                                <img src="/assets/phone-call-svgrepo-com 1.webp" alt="" className='w-16 h-16' />
                             </div>
                             <dd className="text-base lg:text-lg">Teléfono: (503) 7887-4853</dd>
                         </dl>
@@ -44,7 +44,7 @@ function ContactUs() {
                             <dd className="text-base lg:text-lg pb-2">Vespertino: 1:00 PM - 5:30 PM</dd>
 
                             <div className='flex justify-center w-full p-1'>
-                                <img src="src\assets\location-pin-svgrepo-com 1.webp" alt="" className='w-16 h-16' />
+                                <img src="/assets/location-pin-svgrepo-com 1.webp" alt="" className='w-16 h-16' />
                             </div>
                             <dd className="text-base lg:text-lg">Dirección: Col. Zacamil, esquina opuesta a Hospital General de Ahuachapán Francisco Menéndez.</dd>
                         </dl>
@@ -52,7 +52,7 @@ function ContactUs() {
 
                     <section className="flex w-full h-auto items-center justify-between bg-primary rounded-lg">
                         <EmailForm />
-                        <img src="/src/assets/Picture2.webp" alt="" className='hidden lg:flex w-1/2 h-full object-cover rounded-r-lg' />
+                        <img src="/assets/Picture2.webp" alt="" className='hidden lg:flex w-1/2 h-full object-cover rounded-r-lg' />
                     </section>
                 </div>
 

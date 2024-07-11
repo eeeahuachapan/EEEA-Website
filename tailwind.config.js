@@ -1,3 +1,5 @@
+import daisyui from 'daisyui';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -21,15 +23,15 @@ export default {
       
           },
           backgroundImage: {
-            'hero': "url('/src/assets/banner.jpg')",
-            'shapes':'url(/src/assets/Pattern.svg)',
+            'hero': "url('/assets/banner.webp')",
+            'shapes':'url(/assets/Pattern.webp)',
           },
       fontFamily: {
             Montserrat: ['Montserrat, sans-serif'],
           }
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [daisyui],
 
   daisyui: {
     themes: [],
