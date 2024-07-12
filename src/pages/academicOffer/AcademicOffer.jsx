@@ -9,7 +9,7 @@ function AcademicOffer() {
 
             <div className='h-1/5 w-full  -z-10 flex flex-col justify-center lg:items-center lg:h-1/3'>
 
-                <h1 className='text-white font-extrabold absolute z-10 text-4xl text-center lg:text-5xl lg:px-32'>OFERTA ACADÉMICA</h1>
+                <h1 className='text-white w-full font-extrabold absolute z-10 text-4xl text-center lg:text-5xl lg:px-32'>OFERTA ACADÉMICA</h1>
                 <img src='/assets/banner.webp' alt='logo' className='object-cover h-full w-full relative brightness-50' />
             </div>
 
