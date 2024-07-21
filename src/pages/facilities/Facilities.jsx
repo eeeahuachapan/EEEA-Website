@@ -13,10 +13,12 @@ function Facilities() {
     const [open, setOpen] = useState(false);
     const [index, setIndex] = useState(0);
 
+    // Function to toggle the lightbox open state
     const toggleOpen = (bool) => {
         setOpen(bool);
     };
 
+    // Update the current index in the lightbox
     const updateIndex = ({ index: current }) => setIndex(current);
 
     const getData = async () => {

@@ -10,6 +10,7 @@ function Calendar() {
     const [activities, setActivities] = useState([]);
     const [month, setMonth] = useState(null);
 
+    // Function to get all activities
     const getAllData = async () => {
         try {
             setLoading(true);
@@ -25,6 +26,7 @@ function Calendar() {
         }
     };
 
+    // Function to get activities by month
     const getMonthData = async () => {
         try {
             setLoading(true);
@@ -42,7 +44,7 @@ function Calendar() {
 
     const toggleMonth = (num) => {
         if (month === num) {
-            setMonth(null);
+            setMonth(null); // Deselect the month if it's already selected
             return;
         } else {
             setMonth(num);
