@@ -1,11 +1,13 @@
 function CalendarItem({ activity }) {
     const activityDate = new Date(activity.datetime);
+    // Format the date into a readable string in Spanish (day month year)
     const formattedDate = activityDate.toLocaleDateString('es-ES', {
         day: 'numeric',
         month: 'long',
         year: 'numeric'
     });
 
+    // Format the time into a human-readable string in Spanish (hour:minute AM/PM)
     const formattedTime = activityDate.toLocaleTimeString('es-ES', {
         hour: '2-digit',
         minute: '2-digit',

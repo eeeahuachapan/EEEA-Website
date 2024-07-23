@@ -74,6 +74,7 @@ function Navbar() {
         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
 
         <ul className="menu p-4 py-16 w-64 font-semibold text-base  min-h-full bg-white gap-2  z-50">
+          
           {/* Sidebar content here */}
           <li>
             <Link to='/' className='hover:bg-slate-200'>
