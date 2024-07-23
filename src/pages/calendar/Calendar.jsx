@@ -42,6 +42,8 @@ function Calendar() {
         }
     };
 
+    
+    // Function to toggle the month filter value
     const toggleMonth = (num) => {
         if (month === num) {
             setMonth(null); // Deselect the month if it's already selected
@@ -51,6 +53,7 @@ function Calendar() {
         }
     };
 
+    // Gets all activitiess on load and on month value change
     useEffect(() => {
         if (month === null) {
             getAllData();

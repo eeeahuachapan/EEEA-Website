@@ -1,5 +1,7 @@
 import axios from "axios";
 
+
+// Posts email content using name, lastname, email, message and phoneNumber as parameters
 export const sendEmail = async (name, lastname, email, message, phoneNumber) => {
     try {
       const response = await axios.post(`/mail/contact-us`, {

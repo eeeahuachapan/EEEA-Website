@@ -34,6 +34,7 @@ function Facilities() {
         }
     };
 
+    // Gets all facilities on load
     useEffect(() => {
         getData();
     }, []);
