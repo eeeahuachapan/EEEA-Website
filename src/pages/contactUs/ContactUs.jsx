@@ -52,7 +52,7 @@ function ContactUs() {
 
                     <section className="flex w-full h-auto items-center justify-between bg-primary rounded-lg">
                         <EmailForm />
-                        <img src="/assets/Picture2.webp" alt="" className='hidden lg:flex w-1/2 h-full object-cover rounded-r-lg' />
+                        <img src="/assets/Contact.webp" alt="" className='hidden lg:flex w-1/2 h-full object-cover rounded-r-lg' />
                     </section>
                 </div>
 
