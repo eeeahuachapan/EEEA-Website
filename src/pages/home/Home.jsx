@@ -9,6 +9,13 @@ function Home() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleLinkClick = (path) => {
+    return () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      navigate(path);
+    };
+  };
+
   return (
     <div className=' h-screen min-h-screen flex flex-col items-center font-Montserrat'>
       <Navbar />
@@ -39,20 +46,20 @@ function Home() {
         <h1 className='font-bold text-secondary text-xl lg:text-3xl lg:font-extrabold mt-10 lg:mt-12'>Secciones de interés </h1>
 
         <section className='lg:flex lg:my-5 lg:mb-12 p-5 lg:p-10 lg:overflow-hidden'>
-          <Link to={'/oferta-academica'} className='w-full flex flex-col items-center hover:scale-110'>
-            <img src='/assets/OfertaAcademica.webp' alt='section1' className='w-1/3 py-5  lg:py-4 ' />
+          <div className='w-full flex flex-col items-center hover:scale-110' onClick={handleLinkClick('/oferta-academica')}>
+            <img src='/assets/OfertaAcademica.webp' alt='section1' className='w-1/3 py-5 lg:py-4' />
             <h2 className='bg-primary rounded-md py-1 px-2 w-1/2 text-center font-semibold text-secondary'>Oferta académica</h2>
-          </Link>
+          </div>
 
-          <Link to={'/eventos'} className='w-full flex flex-col items-center hover:scale-110'>
-            <img src='/assets/Calendario.webp' alt='section1' className='w-1/3 py-5 lg:py-4 ' />
+          <div className='w-full flex flex-col items-center hover:scale-110' onClick={handleLinkClick('/eventos')}>
+            <img src='/assets/Calendario.webp' alt='section1' className='w-1/3 py-5 lg:py-4' />
             <h2 className='bg-primary rounded-md py-1 px-2 w-1/2 text-center font-semibold text-secondary'>Eventos</h2>
-          </Link>
+          </div>
 
-          <Link to={'/instalaciones'} className='w-full flex flex-col items-center hover:scale-110'>
-            <img src='/assets/Instalaciones.webp' alt='section1' className='w-2/5 py-5 lg:py-0 ' />
+          <div className='w-full flex flex-col items-center hover:scale-110' onClick={handleLinkClick('/instalaciones')}>
+            <img src='/assets/Instalaciones.webp' alt='section1' className='w-2/5 py-5 lg:py-0' />
             <h2 className='bg-primary rounded-md py-1 px-2 w-1/2 text-center font-semibold text-secondary'>Instalaciones</h2>
-          </Link>
+          </div>
         </section>
       </div>
 
