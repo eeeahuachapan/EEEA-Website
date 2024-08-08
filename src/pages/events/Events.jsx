@@ -11,6 +11,7 @@ function Events() {
     const [completed, setCompleted] = useState(null);
     const [month, setMonth] = useState(0);
 
+    // Function to get all events
     const getData = async () => {
         try {
             setLoading(true);
@@ -24,6 +25,7 @@ function Events() {
         }
     };
 
+    // Function to toggle the completed filter value
     const toggleCompleted = (value) => {
         if (completed === value) {
             setCompleted(null);
@@ -33,6 +35,7 @@ function Events() {
         }
     };
 
+    // Function to toggle the month filter value
     const toggleMonth = (num) => {
         if (month === num) {
             setMonth(null);
@@ -41,6 +44,7 @@ function Events() {
         setMonth(num);
     };
 
+    // Gets all events on load or in filter value change
     useEffect(() => {
         getData();
     }, [completed, month]);
@@ -84,7 +88,6 @@ function Events() {
                         </div>
                         <div className="modal-action">
                             <form method="dialog">
-                                {/* if there is a button in form, it will close the modal */}
                                 <button className="btn bg-accent text-white border-none">Aplicar</button>
                             </form>
                         </div>
