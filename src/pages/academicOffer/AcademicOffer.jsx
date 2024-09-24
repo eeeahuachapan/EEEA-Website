@@ -22,23 +22,22 @@ function AcademicOffer() {
                         <div className='text-secondary'>
                             <h2 className='font-semibold'>Ingreso</h2>
                             <ul className='list-disc '>
-                                <li> No puede inhibir su movimiento y controlar sus impulsos</li>
-                                <li> Identifica sus emociones y sentimientos y los expresa </li>
-                                <li> La mayoria posee control de esfinter</li>
-                                <li> Presenta dificultad para seguir indicaciones</li>
-                                <li> Interactua haciendo uso de la comunicacion oral</li>
-                                <li> Desarrolla lazoz de amistad</li>
+                                <li> No puede inhibir su movimiento y controla sus impulsos.</li>
+                                <li> Identifica sus emociones y sentimientos y los expresa.</li>
+                                <li> Sigue el ritmo de la música </li>
+                                <li> La mayoría posee control de esfínteres </li>
+                                <li> Presenta un poco de dificultad al seguir indicaciones.</li>
+                                <li> Desarrollar lazos de amistad</li>
                             </ul>
                         </div>
                         <div className='text-secondary'>
                             <h2 className='font-semibold'>Egreso</h2>
                             <ul className='list-disc '>
-                                <li> Identifica situaciones de riesgo o peligros</li>
-                                <li> Comprende que hay valores y normas que respetar </li>
-                                <li> Se mantiene en el tema y expresa sus ideas</li>
-                                <li> Reconoce su nombre</li>
-                                <li> Se logra comunicar segun la modalidad que le sea mas conveniente</li>
-                                <li> Realiza actividades de la vida diaria</li>
+                                <li> Identifica el espacio físico del aula </li>
+                                <li> Practica algunas normas establecidas en el aula. </li>
+                                <li> Se expresa a través de movimientos corporales  </li>
+                                <li> Se logra comunicar según la modalidad que le sea más conveniente</li>
+                                <li> Se incorpora a actividades lúdicas </li>
                             </ul>
                         </div>
                     </div>
@@ -51,23 +50,25 @@ function AcademicOffer() {
                         <div>
                             <h2 className='font-semibold'>Ingreso</h2>
                             <ul className='list-disc '>
-                                <li> Reconocer miembros de la familia, medios de transporte y elementos del entorno como animales</li>
-                                <li> Reconocer emociones y sentimientos en otras personas </li>
-                                <li> No es capaz de limpiarse al ir al baño</li>
-                                <li> No tiene lenguaje fluido</li>
-                                <li> Presenta un poco de dificultad al seguir indicaciones</li>
-                                <li> Explora el medio natural a traves de experiencias sensoriales</li>
+                                <li> Reconoce miembros de la familia, medios de transporte y elemento del entorno relacionados a la naturaleza.</li>
+                                <li> Reconocer emociones y sentimientos, en él mismo y en otras personas.  </li>
+                                <li> No logra ser totalmente independientemente al momento del uso del baño.</li>
+                                <li> Dificultades en el lenguaje oral</li>
+                                <li> Presenta dificultad en seguir dos o tres indicaciones de forma consecutiva.</li>
+                                <li> Dificultad para respetar bordes de las figuras pequeñas.</li>
+                                <li> Explorar el medio natural a través de experiencias sensoriales.</li>
                             </ul>
                         </div>
                         <div >
                             <h2 className='font-semibold'>Egreso</h2>
                             <ul className='list-disc '>
-                                <li> Expresa y comunica ideas y emociones a traves de diferentes lenguajes</li>
-                                <li> Adquisición de noción de cantidad (todo, mucho, ninguno)</li>
-                                <li> Respeta las normas establecidas en los contextos en los que se desenvuelve</li>
-                                <li> Diferencia las caracteristicas de forma, color, tamaño</li>
-                                <li> Resuelve situaciones de la vida cotidiana</li>
-                                <li> Aplica las normas básicas de convivencia y acepta opiniones de los demas</li>
+                                <li> Expresa, comunica ideas, sentimientos y emociones a través de diferentes lenguajes corporales. </li>
+                                <li> Manifiesta una actitud de solidaridad en momentos emotivos (tristeza, alegría, molestia hacia los demás)</li>
+                                <li> Practica constante del aseo adecuado al momento de ir al baño</li>
+                                <li> Se logra comunicar según la capacidad que posee.</li>
+                                <li> Logra seguir una indicación.</li>
+                                <li> Logra respetar límites con espacios amplios.</li>
+                                <li> Expresa interés por relacionarse con el medio natural.</li>
                             </ul>
                         </div>
                     </div>
@@ -80,22 +81,21 @@ function AcademicOffer() {
                         <div className='text-secondary'>
                             <h2 className='font-semibold'>Ingreso</h2>
                             <ul className='list-disc '>
-                                <li> Inician las habilidades de mantener el entorno seguro</li>
-                                <li> Practica la empatia, asertividad en situaciones adecuadas, aceptación de su cuerpo y su identidad sexual</li>
-                                <li> Sigue reglas y las actividades de la vida diaria</li>
-                                <li> Contesta a preguntas personales</li>
-                                <li> Usa frases sencillas, frases escritas y la lectura de pequeños textos</li>
+                                <li> Inicia las habilidades de mantener el entorno seguro.</li>
+                                <li> Practica la empatía, asertividad en situaciones adecuadas, aceptación de su cuerpo identidad sexual.</li>
+                                <li> Sigue reglas y las actividades de la vida diaria.</li>
+                                <li> Responde preguntas personales.</li>
+                                <li> Aceptación de su cuerpo y su identidad sexual.</li>
                             </ul>
                         </div>
                         <div className='text-secondary'>
                             <h2 className='font-semibold'>Egreso</h2>
                             <ul className='list-disc '>
-                                <li> Demuestra autonomia en diferentes situaciones del centro educativo</li>
-                                <li> Desarrollo de la identidad en actividades individuales y colectivas</li>
-                                <li> Practica medidas de prevencion de enfermedades, riesgos y accidentes</li>
-                                <li> Comprende las normas de circulación y seguridad vial</li>
-                                <li> Desarrolla habilidades de lectroescritura mecánica</li>
-                                <li> Realiza operaciones de la vida cotidiana</li>
+                                <li> Demuestra autonomía en diferentes situaciones del centro educativo.</li>
+                                <li> Desarrollo de la identidad en actividades individuales y colectivas.</li>
+                                <li> Práctica medida de prevención de enfermedades, riesgos y accidentes.</li>
+                                <li> Comprende las normas de la circulación y seguridad vial (no todos)</li>
+                                <li> Desarrolla actividades de lectoescritura mecánica (algunos transcriben)</li>
                             </ul>
                         </div>
                     </div>
@@ -108,23 +108,23 @@ function AcademicOffer() {
                         <div>
                             <h2 className='font-semibold'>Ingreso</h2>
                             <ul className='list-disc '>
-                                <li> Resuelve situaciones de la vida cotidiana</li>
-                                <li> Aplica las normas básicas de convivencia</li>
-                                <li> Expresa y comunica ideas y sentimientos a traves de los diferentes lenguajes</li>
-                                <li> Deficiencia en competencias de autodirección y autocuidado</li>
-                                <li> Falta de seguridad en sus capacidades</li>
-                                <li> Sigue indicaciones y cumple horarios establecidos</li>
+                                <li> Resuelve situaciones de la vida cotidiana.</li>
+                                <li> Aplican las normas básicas de convivencia.</li>
+                                <li> Expresa y comunica ideas sentimientos y emociones a través de los diferentes lenguajes.</li>
+                                <li> Deficiencia en competencia de autodirección y de autocuidado.</li>
+                                <li> Falta de seguridad en sus capacidades.</li>
+                                <li> Siguen indicaciones y cumple horarios establecidos.</li>
                             </ul>
                         </div>
                         <div >
                             <h2 className='font-semibold'>Egreso</h2>
                             <ul className='list-disc '>
-                                <li> Respeta a compañeros de trabajo</li>
-                                <li> Comunica sus ideas con asertividad</li>
-                                <li> Cumple con las normas y politicas del espacio de trabajo</li>
-                                <li> Elabora distintos procesos de manufactura de recetas</li>
-                                <li> Auxilia en proceso de limpieza, corte y organizacion</li>
-                                <li> Maneja estrategias de matemáticas aplicada en la vida diaria y laboral</li>
+                                <li> Interactúa pon respeto qué tu hacia sus compañeros en diferentes situaciones.</li>
+                                <li> Utiliza algunas frases o norma de cortesía al interactuar con los demás.</li>
+                                <li> Sí, lo hace de acuerdo a sus capacidades , ya sea corporal o a través de diferentes lenguajes.</li>
+                                <li> Lo hace de acuerdo a instrucciones de lo que se hace paso a paso.</li>
+                                <li> Se refuerza autoestima, para lograr un mejor desenvolvimiento en las actividades a realizar.</li>
+                                <li> Sí,trabaja en horario flexibles tomando en cuenta sus habilidades y destrezas.</li>
                             </ul>
                         </div>
                     </div>

@@ -29,7 +29,7 @@ function ContactUs() {
                             <div className="flex justify-center w-full p-1">
                                 <img src="/assets/email-svgrepo-com 1.webp" alt="" className='w-16 h-16' />
                             </div>
-                            <dd className="text-base lg:text-lg pb-4">Correo electrónico: roxana.carmen.chiguila@clases.edu.sv</dd>
+                            <dd className="text-base lg:text-lg pb-4">Correo electrónico: gerenciaeeea@gmail.com</dd>
 
                             <div className="flex justify-center w-full p-1">
                                 <img src="/assets/phone-call-svgrepo-com 1.webp" alt="" className='w-16 h-16' />
