@@ -6,7 +6,7 @@ export const getEvents = async ({ month, completed }) => {
     if (month !== null) {
       
       // Adds completed value as a filter parameter
-      const response = await axios.get(`/events?year=2024&startMonth=${month}&endMonth=${month}&groupedByMonth=false${completed !== null ? `&completed=${completed}` : ''}`);
+      const response = await axios.get(`/events?year=2025&startMonth=${month}&endMonth=${month}&groupedByMonth=false${completed !== null ? `&completed=${completed}` : ''}`);
 
       if (response.status === 200) {
         return response.data;
@@ -17,7 +17,7 @@ export const getEvents = async ({ month, completed }) => {
 
     // Fetch all events with no filter in case month is not defined
     // Adds completed value as a filter parameter
-    const response = await axios.get(`/events?year=2024&startMonth=1&endMonth=12&groupedByMonth=false${completed !== null ? `&completed=${completed}` : ''}`);
+    const response = await axios.get(`/events?year=2025&startMonth=1&endMonth=12&groupedByMonth=false${completed !== null ? `&completed=${completed}` : ''}`);
 
     if (response.status === 200) {
       return response.data;

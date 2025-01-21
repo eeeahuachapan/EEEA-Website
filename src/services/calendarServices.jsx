@@ -3,7 +3,7 @@ import axios from "axios";
 // Fetch all activities with no filter
 export const getAllActivities = async () => {
     try {
-        const response = await axios.get(`/activities?year=2024&startMonth=1&endMonth=12&groupedByMonth=false`);
+        const response = await axios.get(`/activities?year=2025&startMonth=1&endMonth=12&groupedByMonth=false`);
 
         if (response.status === 200) {
             return response.data;
