@@ -3,7 +3,9 @@ import axios from "axios";
 // Fetch all activities with no filter
 export const getAllActivities = async () => {
     try {
-        const response = await axios.get(`/activities?year=2025&startMonth=1&endMonth=12&groupedByMonth=false`);
+        const year = new Date().getFullYear(); // Esto obtiene el año actual dinámicamente
+        const response = await axios.get(`/activities?year=${year}&startMonth=1&endMonth=12&groupedByMonth=false`);
+
 
         if (response.status === 200) {
             return response.data;

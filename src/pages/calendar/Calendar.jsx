@@ -9,6 +9,7 @@ function Calendar() {
     const [loading, setLoading] = useState(false);
     const [activities, setActivities] = useState([]);
     const [month, setMonth] = useState(null);
+    const [year, setYear] = useState(2025);
 
     // Function to get all activities
     const getAllData = async () => {

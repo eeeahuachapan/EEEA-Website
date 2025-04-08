@@ -1,12 +1,12 @@
 import axios from "axios";
 
 // Fetch all events using month value as filter parameter
-export const getEvents = async ({ month, completed }) => {
+export const getEvents = async ({ month, completed, year }) => {
   try {
     if (month !== null) {
       
       // Adds completed value as a filter parameter
-      const response = await axios.get(`/events?year=2025&startMonth=${month}&endMonth=${month}&groupedByMonth=false${completed !== null ? `&completed=${completed}` : ''}`);
+      const response = await axios.get(`/events?year=${year}&startMonth=${month}&endMonth=${month}&groupedByMonth=false${completed !== null ? `&completed=${completed}` : ''}`);
 
       if (response.status === 200) {
         return response.data;
